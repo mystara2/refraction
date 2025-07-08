@@ -93,7 +93,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ env.USERNAME }}
-          password: ${{ GHCR_TOKEN }}
+          password: ${{ github.token }}
 
       - name: Push to registry
         env:
